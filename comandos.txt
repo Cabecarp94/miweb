@@ -1,0 +1,52 @@
+GITHUB
+
+CONFIGURACION INICIAL:
+git  --version (Para saber si tenemos correctamente instalado Git)
+git config --global user.name "nombre" (Iniciar git con un usuario)
+git config --global user.emal (Iniciamos git con nuestro correo)
+
+CONFIGURACION DEL EDITOR DE TEXTO:
+git config --global core-editor "code --wait" (De esta manera la terminal espera a que cerremos el editor de texto)
+git config --global -e (Si todo sale bien nuestro archivo de configuracion global deberia de abrirse en VScode)
+git config --global core.autocrlf "true" (Para usuarios Windows) "input" (para usuarios Mac/Linux)
+git config -h (Para obtener mas opciones de configuracion)
+
+COMANDOS:
+ls (Nos lista todos los archivos donde nos encontramos)
+cd (Nos permite movernos entre los archivos)
+cd .. (Nos vuelve un directorio, osea salimos de donde estabamos)
+mkdir (Nos permite crear una carpeta, en el directorio donde nos encontramos)
+git init (Inicia el repositorio en GIT)
+ls -a (Nos muestra los directorios y archivos ocultos)
+rm NombreDelArchivo (Nos permite borrar un archivo o carpeta)
+mv  NombreDelArchivoA NombreDelArchivoB (Nos permite cambiar el nombre del archivo)
+cat NombreDelArchivo (Nos permite ver el contendio del archivo)
+
+CAMBIOS DE STAGE:
+code . (Inicia VSCode en la carpeta donde estoy posicionado)
+git status (Nos muestra el estado actual de nuestro repositorio)
+git status -s (Nos muestra el estado actual del repositorio resumido)
+git add "nombre" (Nos agrega archivos a la etapa stage) 
+git commit -m "nombre" (Compromete nuestro archivos)
+git commit (Nos permite comprometer nuestros archivos desde VSCode)
+git rm "NombreDelArchivo" (Borra el archivo y lo pasa a estado stage)
+git restore --staged NombreDelArchivo (Restaura un archivo del stage)
+gir restore NombreDelArchivo (Vuelve el archivo a nuestra carpeta)
+git mv (Cambiar el nombre del archivo y lo pasa a estado stage)
+git diff (Nos permite ver los cambios realizados de una manera mas visual, sin pasar a etapa stage)
+git diff --stage (Nos permite ver los cambios realizados de una manera visual, en estado stage)
+git log (Nos permite ver los commmit realizados)
+git log --oneline (Nos permite ver los commit de una manera resumida)
+
+CREANDO RAMAS:
+git branch (Nos indica en que rama estamos)
+git checkout -b NombreDeLaRama (Nos crea una rama y nos dirige a la misma)
+git checkout NombreDeLaRama (Nos permite movernos entre el master/rama)
+git merge NombreDeLaRama (Nos permite traer los cambios de otra rama a la nuestra)
+
+CONTENIDO CON GITHUB: Despues de crear un repositorio en la pag de GitHub nos dara unos codigos a pegar
+git remote add origin #Enlace (El enlace que va aqui no los proporciona GitHub)
+git push -u origin NombreDeLaRama (Nos permite subir los cambios al repositorio online, creando y subiendolo desde el master/rama)
+
+
+
